@@ -1,0 +1,440 @@
+.physicalDeliveryContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .deliveryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .headerBackLink {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  
+  .headerBackLink:hover {
+    color: #6c5ce7;
+  }
+  
+  .headerTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contentContainer {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    min-height: 600px;
+  }
+  
+  .nftPreview {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nftImageContainer {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .nftImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .nftDetails {
+    padding-top: 10px;
+  }
+  
+  .nftTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .nftInfo {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .redemptionSteps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stepNumber {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .step.active .stepNumber {
+    background-color: #6c5ce7;
+    color: white;
+  }
+  
+  .step.completed .stepNumber {
+    background-color: #4cd137;
+    color: white;
+  }
+  
+  .stepLabel {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .step.active .stepLabel {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .stepConnector {
+    height: 2px;
+    background-color: #ddd;
+    flex-grow: 1;
+    margin: 0 5px;
+    margin-bottom: 25px;
+  }
+  
+  .formSection {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Size Selection Styles */
+  .sizeSelectionContainer {
+    width: 100%;
+  }
+  
+  .sectionTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .sizesContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .sizeOption {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .sizeOption:hover {
+    border-color: #6c5ce7;
+    background-color: #f0edff;
+  }
+  
+  .sizeOption.selectedSize {
+    border-color: #6c5ce7;
+    background-color: #6c5ce7;
+    color: white;
+  }
+  
+  .sizeChartButton {
+    background: none;
+    border: none;
+    color: #6c5ce7;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  
+  .sizeChartContainer {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .sizeChartTitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .sizeChart {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .sizeChart th, .sizeChart td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+  
+  .sizeChart th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .formError {
+    color: #e74c3c;
+    margin: 10px 0 20px;
+    font-size: 14px;
+  }
+  
+  .navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .backButton, .nextButton, .returnButton {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backButton {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .backButton:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .nextButton, .returnButton {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+  }
+  
+  .nextButton:hover, .returnButton:hover {
+    background-color: #5649d1;
+  }
+  
+  .nextButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .buttonLoading {
+    opacity: 0.7;
+    cursor: wait;
+  }
+  
+  /* Shipping Form Styles */
+  .shippingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .formGroup input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .formGroup input:focus {
+    outline: none;
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.1);
+  }
+  
+  /* Payment Styles */
+  .orderSummary {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .orderDetail {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .orderDetail:last-child {
+    border-bottom: none;
+  }
+  
+  .orderDetail.shippingFee {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .paymentMethods {
+    margin-bottom: 30px;
+  }
+  
+  .paymentMethods h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .paymentMethod {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .paymentMethod.selected {
+    border-color: #6c5ce7;
+    background-color: #f5f3ff;
+  }
+  
+  .paymentMethodIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6c5ce7;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .paymentMethodDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .paymentMethodDetails span:first-child {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .paymentMethodDetails span:last-child {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Confirmation Styles */
+  .confirmationContainer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .confirmationIcon {
+    width: 80px;
+    height: 80px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: white;
+  }
+  
+  .confirmationTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .confirmationDescription {
+    font-size: 16px;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  
+  .confirmationDetails {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    text-align: left;
+  }
+  
+  .confirmationDetail {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .confirmationDetail span:first-child {
+    font-weight: 600;
+    width: 150px;
+  }
